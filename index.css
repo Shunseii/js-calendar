@@ -1,0 +1,90 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+.secondary {
+    font-weight: 300;
+}
+
+.time-slot {
+    height: 30px;
+    position: relative;
+    top: -11px;
+    width: fit-content;
+    margin: 0 0 0 auto;
+}
+
+.time-slot:last-child {
+    margin-bottom: 0;
+}
+
+.time-main {
+    font-weight: 600;
+}
+
+.time-aux {
+    font-size: smaller;
+}
+
+.time-period {
+    font-size: small;
+}
+
+.time-tick {
+    color: black;
+    position: relative;
+    left: 5px;
+}
+
+p:first-child > .time-tick {
+    top: 1px;
+}
+
+.time-container {
+    margin-left: auto;
+}
+
+.events-container {
+    position: relative;
+    padding: 0 10px;
+    margin-right: auto;
+    margin-left: 0;
+    height: 720px;
+    width: 600px;
+    background-color: #D8D8D8;
+}
+
+.event-box {
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px 0px #BEBFBF;
+    position: absolute;
+    padding-left: 5px;
+    border-left: 5px solid #5687B3;
+    width: 590px;
+    background-color: white;
+}
+
+.event-box > .event-title {
+    color: #5687B3;
+    font-size: larger;
+    padding-top: 5px;
+    margin: 0px;
+}
+
+.event-box > .event-location {
+    margin: 3px 0 5px 0;
+    font-weight: lighter;
+    font-size: smaller;
+}
+
