@@ -111,7 +111,7 @@ function resetLayout() {
     }
 }
 
-function layOutEvents(events) {
+function layOutDay(events) {
     const eventItems = events
         .map(
             event => new EventItem(event.start, event.end)
@@ -173,5 +173,5 @@ const test3 = [
     { start: 610, end: 670 }
 ];
 
-layOutEvents(test3);
+layOutDay(test3);
 loadTimeContainer();
